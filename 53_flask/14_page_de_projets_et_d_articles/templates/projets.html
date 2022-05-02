@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>Projets</h1>
+    {% for projet in projets %}
+    <article>
+        <img src="{{ projet.image_url }}" alt="Image de projet">
+        <div class="projet-description">
+            <h3>{{ projet.titre }}</h3>
+            <p>{{ projet.description }}</p>
+        </div>
+    </article>
+    {% endfor %}
+{% endblock %}

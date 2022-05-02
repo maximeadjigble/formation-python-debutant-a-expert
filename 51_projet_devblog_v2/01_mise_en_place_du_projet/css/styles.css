@@ -1,0 +1,32 @@
+body {
+    background-color: #FEFEFE;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: lightgreen;
+}
+
+#presentation {
+    background-color: lightpink;
+}
+
+#projets {
+    background-color: lightsalmon;
+}
+
+#articles {
+    background-color: lightseagreen;
+}
+
+#contacts {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightgray;
+}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section id="page-projets">
+    <div class="container-titre-btn">
+        <h1>Projets</h1>
+        <a class="btn-lien" href="{{ url_for('creer_projet') }}">Créer</a>
+    </div>
+    {% for projet in projets %}
+    <article>
+        <img src="{{ projet.image_url }}" alt="Image de projet">
+        <div class="projet-description">
+            <h3><a href="{{ url_for('projets', slug=projet.slug) }}">{{ projet.titre }}</a></h3>
+            <p>{{ projet.description }}</p>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

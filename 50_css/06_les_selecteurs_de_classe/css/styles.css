@@ -1,0 +1,11 @@
+div.bg-light-blue {
+    background-color: lightblue;
+}
+
+.centrer {
+    text-align: center;
+}
+
+.bordures {
+    border: 1px solid red;
+}

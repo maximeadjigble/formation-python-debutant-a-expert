@@ -1,0 +1,8 @@
+Un fichier d'exemple
+Première ligne
+Deuxième ligne
+Troisième ligne
+Troisième ligne
+Troisième ligne
+Quatrième ligne
+fichier

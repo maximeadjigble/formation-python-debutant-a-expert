@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style type="text/css">
+        body {
+            background-color: lightblue;
+        }
+
+        ul li {
+            font-size: 40px;
+        }
+
+        @media (max-width: 576px) {
+            .x-small {
+                background-color: yellow;
+                color: red;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            .small {
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .medium {
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .large {
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .extra-large {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="x-small">X-Small</li>
+        <li class="small">Small</li>
+        <li class="medium">Medium</li>
+        <li class="large">Large</li>
+        <li class="extra-large">Extra Large</li>
+    </ul>
+</body>
+
+</html>

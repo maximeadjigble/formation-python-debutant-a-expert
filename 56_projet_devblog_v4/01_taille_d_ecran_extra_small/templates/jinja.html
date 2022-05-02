@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja</title>
+</head>
+
+<body>
+    <h1>Jinja 2</h1>
+    <h2>Expression</h2>
+    {{ prenom }}
+    {{ prenom.upper() }}
+
+    <h2>Commandes</h2>
+    {% if afficher %}
+    <p>HTML caché</p>
+    {% endif %}
+
+    <ul>
+        {% for utilisateur in utilisateurs %}
+            <li>{{ utilisateur }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Commentaires</h2>
+    {# Commentaire JINJA #}
+    <!-- <p>Commentaire HTML</p> -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel blanditiis repellendus molestiae praesentium eum incidunt pariatur molestias reiciendis velit quasi error facilis aspernatur, minima voluptatem quam vitae dolore unde consequatur.</p>
+</body>
+
+</html>

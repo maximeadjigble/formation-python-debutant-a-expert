@@ -1,0 +1,18 @@
+hr {
+    margin-bottom: 50px;
+}
+
+div, span {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+div {
+    display: inline-block;
+    margin: 40px;
+}
+
+span {
+    /* display: block; */
+    /* margin: 40px; */
+}

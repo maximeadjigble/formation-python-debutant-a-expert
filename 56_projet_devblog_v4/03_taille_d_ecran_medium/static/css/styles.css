@@ -1,0 +1,339 @@
+body {
+    background-color: #FEFEFE;
+    font-family: "Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 40px 0px;
+}
+
+a {
+    color: #005b99;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 
+nav {
+    background-color: lightgreen;
+}
+
+#presentation {
+    background-color: lightpink;
+}
+
+#projets {
+    background-color: lightsalmon;
+}
+
+#articles {
+    background-color: lightseagreen;
+}
+
+#contacts {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightgray;
+} */
+
+/* ####### Barre de navigation ####### */
+nav {
+    padding: 20px 0px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+nav .contact {
+    border: 1px solid #005b99;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav .contact:hover {
+    background-color: #005b99;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    float: right;
+}
+
+nav span a {
+    margin-right: 5px;
+}
+
+/* ####### présentation & compétences ####### */
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaf5fa;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.h1-gros {
+    font-size: 35px;
+}
+
+.aucune-marge {
+    margin: 0px;
+}
+
+.image_profile img {
+    border-radius: 50%;
+}
+
+/* ####### Projets ####### */
+#projets .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#projets article {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+}
+
+/* #projets article div {
+    background-color: lightblue;
+} */
+
+.projet-description {
+    padding: 0px 10px;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.en-savoir-plus {
+    text-align: right;
+}
+
+/* ####### Articles ####### */
+#articles {
+    background-color: #eaf5fa;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#articles article a {
+    text-decoration: none;
+}
+
+/* ####### Footer ####### */
+footer {
+    padding: 40px 10px;
+    border-top: 1px solid #ECECEC;
+    background-color: #F8F9FA;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a svg {
+    color: black;
+    padding: 0px 2px;
+}
+
+.linkedin svg {
+    color: #0177B4;
+}
+
+.up svg {
+    margin-left: 10px;
+}
+
+.up svg:hover {
+    color: #005b99;
+}
+
+footer div {
+    float: right;
+}
+
+/* ####### 404 ####### */
+#page_404 h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#page_404 div {
+    text-align: center;
+}
+
+#page_404 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ####### Le Formulaires ####### */
+.formulaire {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding: 10px 0;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type=submit], input[type=file] {
+    display: block;
+    margin: 10px 0px;
+}
+
+input[type=submit] {
+    border: 1px solid #005b99;
+    background-color: white;
+    color: #005b99;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+input[type=submit]:hover {
+    background-color: #005b99;
+    color: white;
+}
+
+/* ####### Boutons Création Article & Projet ####### */
+
+.btn-lien {
+    text-decoration: none;
+    border: 1px solid #005b99;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.btn-lien:hover {
+    color: white;
+    background-color: #005b99;
+}
+
+.container-titre-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#page-articles, #page-projets {
+    margin: 0px;
+}
+
+/* ####### Améliorations CSS ####### */
+main {
+    min-height: 70vh;
+}
+
+footer {
+    padding-bottom: 100px;
+}
+
+
+/* ####### Developpement Responsive ####### */
+@media (min-width:576px) {
+    #projets {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 0px 20px;
+    }
+
+    #page-projets {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width:768px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;     
+    }
+
+    #presentation {
+        flex-direction: row;
+    }
+
+    section {
+        padding: 0px 100px;
+    }
+
+    #projets {
+        padding: 0px;
+        width: 80%;
+    }
+
+    #projets .container {
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #projets h2, #projets .en-savoir-plus{
+        text-align: center;
+    }
+
+    #projets .container article {
+        flex-basis: 45%;
+    }
+
+    .formulaire {
+        width: 500px;
+    }
+}
+
+@media (min-width:992px) {
+    body {
+        background-color: lightblue;
+    }
+}

@@ -1,0 +1,14 @@
+span {
+    font-size: 40px;
+    /* border: 1px solid blue; */
+    border-top: 1px solid blue;
+    border-right: 2px dotted red;
+    border-bottom: 3px dashed green;
+    border-left: 4px double black;
+    
+    /* border-style: solid;  */
+    /*double, dotted, dashed*/
+    /* border-width: 2px;
+    border-color: #FA05AA;
+    border-radius: 15px; */
+}

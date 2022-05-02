@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="formulaire">
+    <h1>Créer un Article</h1>
+    <form method="post" action="{{url_for('creer_article')}}">
+        <label for="titre">Titre:</label>
+        <input required id="titre" type="text" name="titre">
+        <label for="slug">Slug:</label>
+        <input required id="slug" type="text" name="slug">
+        <label for="contenu">Contenu:</label>
+        <textarea required name="contenu" id="contenu"></textarea>
+        <input type="submit" value="Créer">
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+/* p {
+    color:blue;
+}
+
+p span {
+    color: red;
+}
+
+div a {
+    color: red;
+} */
+
+/* span, a {
+    color: blue;
+} */
+
+/* .ma-classe span {
+    color: red;
+} */
+
+#ma-div span {
+    color: red;
+}

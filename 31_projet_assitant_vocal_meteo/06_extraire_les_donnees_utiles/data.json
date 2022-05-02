@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 2.5,
+        "lat": 48.5
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 13.3,
+        "feels_like": 11.83,
+        "temp_min": 13,
+        "temp_max": 13.89,
+        "pressure": 1012,
+        "humidity": 44
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.54,
+        "deg": 50
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1619796642,
+    "sys": {
+        "type": 1,
+        "id": 6543,
+        "country": "FR",
+        "sunrise": 1619757118,
+        "sunset": 1619809334
+    },
+    "timezone": 7200,
+    "id": 3012874,
+    "name": "Île-de-France Region",
+    "cod": 200
+}

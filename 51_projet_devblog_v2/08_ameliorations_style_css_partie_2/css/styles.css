@@ -1,0 +1,167 @@
+body {
+    background-color: #FEFEFE;
+    font-family: "Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 40px 0px;
+}
+
+a {
+    color: #005b99;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 
+nav {
+    background-color: lightgreen;
+}
+
+#presentation {
+    background-color: lightpink;
+}
+
+#projets {
+    background-color: lightsalmon;
+}
+
+#articles {
+    background-color: lightseagreen;
+}
+
+#contacts {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightgray;
+} */
+
+/* ####### Barre de navigation ####### */
+nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+nav .contact {
+    border: 1px solid #005b99;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav .contact:hover {
+    background-color: #005b99;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    float: right;
+}
+
+nav span a {
+    margin-right: 5px;
+}
+
+section {
+    padding: 0 300px;
+}
+
+/* ####### présentation & compétences ####### */
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaf5fa;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.h1-gros {
+    font-size: 35px;
+}
+
+.aucune-marge {
+    margin: 0px;
+}
+
+.image_profile img {
+    border-radius: 50%;
+}
+
+/* ####### Projets ####### */
+#projets .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#projets article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 20px;
+}
+
+/* #projets article div {
+    background-color: lightblue;
+} */
+
+.projet-description {
+    padding: 0px 10px;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.en-savoir-plus {
+    text-align: right;
+}
+
+/* ####### Articles ####### */
+#articles {
+    background-color: #eaf5fa;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#articles article a {
+    text-decoration: none;
+}
+
+/* ####### Footer ####### */
+footer {
+    padding: 40px;
+    border-top: 1px solid #ECECEC;
+    background-color: #F8F9FA;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a svg {
+    color: black;
+}
+
+footer div {
+    float: right;
+}

@@ -1,0 +1,28 @@
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bouton {
+    color: white;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.primaire {
+    background-color: #0D6EFD;
+}
+
+.secondaire {
+    background-color: #6C757D;
+}
+
+.succes {
+    background-color: #198754;
+}
+
+.danger {
+    background-color: #DC3545;
+}

@@ -1,0 +1,11 @@
+p {
+    text-transform: capitalize;
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+}
+
+div {
+    background-color: lightblue;
+    /* text-align: right; */
+    text-align: justify;
+}

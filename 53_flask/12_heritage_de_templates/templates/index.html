@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <!-- Infos -->
+    <section id="presentation">
+        <div class="container">
+            <h1 class="h1-gros aucune-marge">Maxime Adjigble</h1>
+            <div class="competences">
+                <p>
+                    Bonjour, je m'appelle Maxime Adjigble et je suis un développeur Python
+                    expérimenté. vous pouvez consulter
+                    <a href="#">mes projets</a> un peu plus bas.
+                </p>
+                <ul>
+                    <li>Python - Niveau Expert</li>
+                    <li>Tkinter (interface graphiques)</li>
+                    <li>PyGame (Jeux 2D/3D)</li>
+                    <li>Développeur web (Front-end, Back-end)</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image_profile">
+            <img src="{{ url_for('static', filename='images/maxime.jpg') }}" alt="Image de profile">
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="container">
+            <article>
+                <img src="{{ url_for('static', filename='images/thumb_small.png') }}" alt="Image de projet">
+                <div class="projet-description">
+                    <h3>Projet 1</h3>
+                    <p>Description du projet 1</p>
+                </div>
+            </article>
+            <article class="direction-rtl">
+                <img src="{{ url_for('static', filename='images/thumb_small.png') }}" alt="Image de projet">
+                <div class="projet-description">
+                    <h3>Projet 2</h3>
+                    <p>Description du projet 2</p>
+                </div>
+            </article>
+            <article>
+                <img src="{{ url_for('static', filename='images/thumb_small.png') }}" alt="Image de projet">
+                <div class="projet-description">
+                    <h3>Projet 3</h3>
+                    <p>Description du projet 3</p>
+                </div>
+            </article>
+        </div>
+        <div class="en-savoir-plus"><a href="#">Plus de projets ...</a></div>
+    </section>
+
+    <!-- Articles -->
+    <section id="articles">
+        <h2>Articles</h2>
+        <article>
+            <h3>
+                <a href="#">Titre article 1</a>
+            </h3>
+            <p>Description article 1</p>
+        </article>
+        <article>
+            <h3>
+                <a href="#">Titre article 2</a>
+            </h3>
+            <p>Description article 2</p>
+        </article>
+        <div class="en-savoir-plus"><a href="#">Plus d'articles ...</a></div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts">
+        <h2>Me contacter</h2>
+        <p>Veuillez me contacter a l'adresse e-mail maxime@devblog.com</p>
+    </section>
+</main>
+{% endblock %}

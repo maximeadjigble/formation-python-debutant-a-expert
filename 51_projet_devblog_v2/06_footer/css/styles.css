@@ -1,0 +1,114 @@
+body {
+    background-color: #FEFEFE;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* nav {
+    background-color: lightgreen;
+}
+
+#presentation {
+    background-color: lightpink;
+}
+
+#projets {
+    background-color: lightsalmon;
+}
+
+#articles {
+    background-color: lightseagreen;
+}
+
+#contacts {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightgray;
+} */
+
+/* ####### Barre de navigation ####### */
+nav {
+    padding: 20px 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    float: right;
+}
+
+nav span a {
+    margin-right: 5px;
+}
+
+section {
+    padding: 0 300px;
+}
+
+/* ####### présentation & compétences ####### */
+#presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_profile img {
+    border-radius: 50%;
+}
+
+/* ####### Projets ####### */
+#projets .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#projets article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 20px;
+}
+
+/* #projets article div {
+    background-color: lightblue;
+} */
+
+.projet-description {
+    padding: 0px 10px;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.en-savoir-plus {
+    text-align: right;
+}
+
+/* ####### Articles ####### */
+#articles article a {
+    text-decoration: none;
+}
+
+/* ####### Footer ####### */
+footer {
+    padding: 40px 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a svg {
+    color: black;
+}
+
+footer div {
+    float: right;
+}

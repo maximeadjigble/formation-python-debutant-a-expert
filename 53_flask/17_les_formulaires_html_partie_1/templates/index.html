@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <!-- Infos -->
+    <section id="presentation">
+        <div class="container">
+            <h1 class="h1-gros aucune-marge">Maxime Adjigble</h1>
+            <div class="competences">
+                <p>
+                    Bonjour, je m'appelle Maxime Adjigble et je suis un développeur Python
+                    expérimenté. vous pouvez consulter
+                    <a href="#">mes projets</a> un peu plus bas.
+                </p>
+                <ul>
+                    <li>Python - Niveau Expert</li>
+                    <li>Tkinter (interface graphiques)</li>
+                    <li>PyGame (Jeux 2D/3D)</li>
+                    <li>Développeur web (Front-end, Back-end)</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image_profile">
+            <img src="{{ url_for('static', filename='images/maxime.jpg') }}" alt="Image de profile">
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="container">
+            {% for projet in projets %}
+            <article>
+                <img src="{{ projet.image_url }}" alt="Image de projet">
+                <div class="projet-description">
+                    <h3>{{ projet.titre }}</h3>
+                    <p>{{ projet.description }}</p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="en-savoir-plus"><a href="{{url_for('projets')}}">Plus de projets ...</a></div>
+    </section>
+
+    <!-- Articles -->
+    <section id="articles">
+        <h2>Articles</h2>
+        {% for article in articles %}
+        <article>
+            <h3>
+                <a href="#">{{article.titre}}</a>
+            </h3>
+            <p>{{article.contenu}}</p>
+        </article>
+        {% endfor %}
+        <div class="en-savoir-plus"><a href="{{url_for('articles')}}">Plus d'articles ...</a></div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts">
+        <h2>Me contacter</h2>
+        <p>Veuillez me contacter a l'adresse e-mail maxime@devblog.com</p>
+    </section>
+</main>
+{% endblock %}

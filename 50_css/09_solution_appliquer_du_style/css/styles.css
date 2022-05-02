@@ -1,0 +1,24 @@
+body {
+    width: 80%;
+    margin: 0px auto;
+}
+
+h2 {
+    color: blue;
+}
+
+p span {
+    background-color: yellow;
+}
+
+p a {
+    color: green;
+}
+
+.couleur-rouge {
+    color: red;
+}
+
+ul li {
+    color: blue;
+}

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 100px;
+    /* height: 500px; */
+    border: 2px solid red;
+}
+
+.container div {
+    border: 2px solid blue;
+}
+
+.element {
+    flex-grow: 1;
+}
+
+.element-grow {
+    flex-grow: 3;
+}
